@@ -10,6 +10,6 @@ public class MvcConfiguration implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new CertInterceptor())
-                .excludePathPatterns("/css/**", "/fonts/**", "/plugin/**", "/scripts/**");
+                .excludePathPatterns("/css/**", "/fonts/**", "/plugin/**", "/scripts/**", "/ping");
     }
 }
